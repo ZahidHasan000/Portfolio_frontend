@@ -6,7 +6,7 @@ import './UploadProject.css'
 
 function UploadProject() {
   const [modalIsOpen, setIsOpen] = useState(false);
-  const [contentData, setContentData] = useState({ title: "", description: "", link: "", imageUrl: "" });
+  const [contentData, setContentData] = useState({ title: "", description: "", link: "", technology: "", note: "", backendLink: "", imageUrl: "" });
   const [projects, setProjects] = useState([]);
   const [update, setUpdate] = useState(false);
   const [spinner, setSpinner] = useState(false);
@@ -142,6 +142,9 @@ function UploadProject() {
     formData.append('title', contentData.title);
     formData.append('description', contentData.description);
     formData.append('link', contentData.link);
+    formData.append('technology', contentData.technology);
+    formData.append('note', contentData.note);
+    formData.append('backendLink', contentData.backendLink);
     formData.append('adminOnly', contentData.adminOnly || true);
     // formData.append('imageUrl', contentData.imageUrl);
 
@@ -156,7 +159,7 @@ function UploadProject() {
         .then(() => {
           setUpdate(!update);
           setIsOpen(false);
-          setContentData({ title: "", description: "", link: "", imageUrl: "" });
+          setContentData({ title: "", description: "", link: "", technology: "", note: "", backendLink: "", imageUrl: "" });
           // alert("Data Updated Successfully");
           Swal.fire({
             position: 'top-center',
@@ -185,7 +188,7 @@ function UploadProject() {
         .then(() => {
           setUpdate(!update);
           setIsOpen(false);
-          setContentData({ title: "", description: "", link: "", imageUrl: "" });
+          setContentData({ title: "", description: "", link: "", technology: "", note: "", backendLink: "", imageUrl: "" });
           // setContentData({ ...contentData, imageUrl: res.data.imageUrl });
           // alert("Data Added Successfully");
           Swal.fire({
@@ -214,7 +217,7 @@ function UploadProject() {
 
   const closeModal = () => {
     setIsOpen(false);
-    setContentData({ title: "", description: "", link: "", imageUrl: "" });
+    setContentData({ title: "", description: "", link: "", technology: "", note: "", backendLink: "", imageUrl: "" });
   }
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
@@ -310,6 +313,12 @@ function UploadProject() {
                 <input onChange={handleChange} name='description' value={contentData.description} type="text" className="form-control form-control-sm my-2" required placeholder="Description" />
 
                 <input onChange={handleChange} name='link' value={contentData.link} type="text" className="form-control form-control-sm my-2" required placeholder="Link" />
+
+                <input onChange={handleChange} name='technology' value={contentData.technology} type="text" className="form-control form-control-sm my-2" placeholder="Technolgy" />
+
+                <input onChange={handleChange} name='note' value={contentData.note} type="text" className="form-control form-control-sm my-2" placeholder="Note" />
+
+                <input onChange={handleChange} name='backendLink' value={contentData.backendLink} type="text" className="form-control form-control-sm my-2" placeholder="Backend Link" />
 
                 {/* <input onChange={handleChange} name='imageUrl' value={contentData.imageUrl} type="file" className="form-control form-control-sm my-2" required placeholder="ImageUrl" /> */}
 

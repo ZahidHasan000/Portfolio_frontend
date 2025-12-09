@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
 import BackGroundImage from './BackGround';
 import Skill from './Skill';
-import CV from "../assets/cv.pdf";
+import CV from "../assets/updated.pdf";
 import Sidebar from './SideBar';
 import './About.css';
 
@@ -16,7 +16,10 @@ function About() {
                     <div className="about mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 m-0 p-0">
                         <div className="about-2 mt-8 md:mt-8 pt-8 md:pt-8 ml-8 md:ml-8 pl-8 md:pl-8 text-left">
                             <h2 className='summary'>Summary</h2>
-                            <p>I am a Full Stack Developer with over 2 years experience in software development and proficiency in development tools. I love to build products that solves or attempts to solve real life problems. I am a strong believer in teamwork and community building. I have experience in Frontend (HTML, CSS, Bootstrap, Tailwind, Javascript, React.Js, Three.Js), Backend(Node.Js, Flask, Odoo), Databases (MongoDb, Firebase, MySQL, PostgreSQL), UI/UX designs (Figma) and Python (Data Analysis, Machine Learning)</p>
+                            <p>I am a Software Developer with over two years of hands-on experience building scalable, user-focused, and data-driven applications. I’m passionate about creating products that solve real-world problems and bring meaningful impact to businesses and users alike.</p>
+                            <p>My work spans across frontend, backend, ERP development, and AI/data-driven systems, giving me the versatility to work on end-to-end software solutions. I value clean architecture, modern development practices, and delivering reliable, production-ready features.</p>
+                            <p>I enjoy collaborating in teams, contributing to communities, and continuously learning to stay ahead in a fast-evolving tech landscape.</p>
+                            {/* <p>I am a Full Stack Developer with over 2 years experience in software development and proficiency in development tools. I love to build products that solves or attempts to solve real life problems. I am a strong believer in teamwork and community building. I have experience in Frontend (HTML, CSS, Bootstrap, Tailwind, Javascript, React.Js, Three.Js), Backend(Node.Js, Flask, Odoo), Databases (MongoDb, Firebase, MySQL, PostgreSQL), UI/UX designs (Figma) and Python (Data Analysis, Machine Learning)</p> */}
                             <div className='resume mt-3 pt-3'>
                                 <a href={CV} download className="button">
                                     <span className="text-green-500 hover:text-green-700">Download My CV</span>

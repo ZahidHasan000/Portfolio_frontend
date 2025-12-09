@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import BackGroundImage from './BackGround';
 import Sidebar from './SideBar';
@@ -49,16 +49,24 @@ function Project() {
                             {currentProjects.slice().reverse().map((item, index) => (
                                 <div key={index}>
 
-                                    <a href={item.link} target="_blank" rel="noopener noreferrer">
+                                    {/* <a href={item.link} target="_blank" rel="noopener noreferrer">
                                         {item.imageUrl ? (
                                             <div className="image-container">
-                                                <img src={`http://localhost:5000/${item.imageUrl}`} alt="" className="custom-image" />
+                                                <img src={`${import.meta.env.VITE_BACKEND_IMAGE_URL}${item.imageUrl}`} alt="" className="custom-image" />
                                                 <h1 className="image-title"> View Project {item.title}</h1>
                                             </div>
                                         ) : (
                                             <p>No image available</p>
                                         )}
-                                    </a>
+                                    </a> */}
+                                        {/* projectId */}
+                                    <Link to={`/project/${item._id}`}>
+                                        <div className="image-container">
+                                            <img src={`${import.meta.env.VITE_BACKEND_IMAGE_URL}${item.imageUrl}`}
+                                                alt="" className="custom-image" />
+                                            <h1 className="image-title">Details of {item.title}</h1>
+                                        </div>
+                                    </Link>
 
                                 </div>
                             ))}

@@ -47,11 +47,13 @@
 .input .flex .mr-2 {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
+  width: 342px;
 }
 
 .input .flex .email {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
+  width: 342px;
 }
 
 .input .message .mess {

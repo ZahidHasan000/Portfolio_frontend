@@ -1,3 +1,36 @@
+/* body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.project-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+} */
+
+/* Add animation keyframe */
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-120deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+/* Apply animation to project container */
+.project-container {
+  animation: transitionIn 2s ease-out forwards;
+  opacity: 0;
+  transform: rotateX(-120deg);
+}
+
 body,
 html {
   margin: 0;
@@ -8,10 +41,11 @@ html {
 
 .project-item {
   display: flex;
-  /* justify-content: space-between;  */
   flex-wrap: wrap;
   gap: 10px;
 }
+
+/* ... rest of your existing CSS */
 
 .custom-image {
   width: 200px;

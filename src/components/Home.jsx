@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect'; // Import the Typewriter component
 import './Home.css';
 
 function Home() {
-    const [texts] = useState(['A Full Stack Developer', 'A Software Engineer', 'A Problem Solver', 'A Business Analyst']); // Define an array of strings for the Typewriter effect
+    const [texts] = useState(['Full Stack Developer' , 'Odoo Developer', 'Backend Engineer', 'Problem Solver']); // Define an array of strings for the Typewriter effect
 
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -27,7 +27,7 @@ function Home() {
                         <h4 className="text text-white">
                             <Typewriter
                                 options={{
-                                    strings: ["I'm"],
+                                    strings: ["Hello, I'm"],
                                     autoStart: true,
                                     cursor: '',
                                     loop: false, // Disable looping for the introductory text

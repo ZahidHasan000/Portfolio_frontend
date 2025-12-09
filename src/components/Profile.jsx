@@ -9,7 +9,7 @@ import tailwind from '../../src/assets/tailwind.svg';
 import jquery from '../../src/assets/jquery.svg';
 import javascript from '../../src/assets/javascript.svg';
 import react from '../../src/assets/react.svg';
-import remix from '../../src/assets/remix.svg';
+// import remix from '../../src/assets/remix.svg';
 import node from '../../src/assets/node.svg';
 import three from '../../src/assets/three.svg';
 import graphql from '../../src/assets/graphql.svg';
@@ -17,8 +17,12 @@ import python from '../../src/assets/python.svg';
 import flask from '../../src/assets/flask.svg';
 import ai from '../../src/assets/ai.svg';
 import da from '../../src/assets/da.svg';
-import figma from '../../src/assets/figma.svg';
-import shopify from '../../src/assets/shopify.svg';
+// import figma from '../../src/assets/figma.svg';
+import odoo from '../../src/assets/odoo.svg';
+import pg from '../../src/assets/pg.svg';
+import mysql from '../../src/assets/mysql.svg';
+import mongo from '../../src/assets/mongo.svg';
+// import shopify from '../../src/assets/shopify.svg';
 
 import './Profile.css';
 
@@ -168,7 +172,7 @@ const Profile = () => {
                         </div>
                     </div>
 
-                    <div className="skill-bar">
+                    {/* <div className="skill-bar">
                         <img src={remix} alt="CSS Logo" className="skill-logo h-8 w-8" />
                         <div className="skill-progress-container">
                             <div className="skill-progress" style={{ width: '60%' }}>
@@ -176,7 +180,7 @@ const Profile = () => {
                             </div>
                             <span className="skill-label">REMIX</span>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="skill-bar">
                         <img src={node} alt="CSS Logo" className="skill-logo h-8 w-8" />
@@ -219,6 +223,16 @@ const Profile = () => {
                     </div>
 
                     <div className="skill-bar">
+                        <img src={odoo} alt="CSS Logo" className="skill-logo h-8 w-8" />
+                        <div className="skill-progress-container">
+                            <div className="skill-progress" style={{ width: '80%' }}>
+                                <span className="progress-label">80%</span>
+                            </div>
+                            <span className="skill-label">ODOO</span>
+                        </div>
+                    </div>
+
+                    <div className="skill-bar">
                         <img src={flask} alt="CSS Logo" className="skill-logo h-8 w-8" />
                         <div className="skill-progress-container">
                             <div className="skill-progress" style={{ width: '55%' }}>
@@ -249,6 +263,36 @@ const Profile = () => {
                     </div>
 
                     <div className="skill-bar">
+                        <img src={mongo} alt="CSS Logo" className="skill-logo h-8 w-8" />
+                        <div className="skill-progress-container">
+                            <div className="skill-progress" style={{ width: '60%' }}>
+                                <span className="progress-label">60%</span>
+                            </div>
+                            <span className="skill-label">MongoDB</span>
+                        </div>
+                    </div>
+
+                    <div className="skill-bar">
+                        <img src={pg} alt="CSS Logo" className="skill-logo h-8 w-8" />
+                        <div className="skill-progress-container">
+                            <div className="skill-progress" style={{ width: '60%' }}>
+                                <span className="progress-label">60%</span>
+                            </div>
+                            <span className="skill-label">PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <div className="skill-bar">
+                        <img src={mysql} alt="CSS Logo" className="skill-logo h-8 w-8" />
+                        <div className="skill-progress-container">
+                            <div className="skill-progress" style={{ width: '60%' }}>
+                                <span className="progress-label">60%</span>
+                            </div>
+                            <span className="skill-label">MySQL</span>
+                        </div>
+                    </div>
+
+                    {/* <div className="skill-bar">
                         <img src={figma} alt="CSS Logo" className="skill-logo h-8 w-8" />
                         <div className="skill-progress-container">
                             <div className="skill-progress" style={{ width: '50%' }}>
@@ -256,24 +300,14 @@ const Profile = () => {
                             </div>
                             <span className="skill-label">FIGMA</span>
                         </div>
-                    </div>
-
-                    <div className="skill-bar">
-                        <img src={shopify} alt="CSS Logo" className="skill-logo h-8 w-8" />
-                        <div className="skill-progress-container">
-                            <div className="skill-progress" style={{ width: '60%' }}>
-                                <span className="progress-label">60%</span>
-                            </div>
-                            <span className="skill-label">SHOPIFY</span>
-                        </div>
-                    </div>
-
+                    </div> */}
                 </div>
             </div>
 
             <div className="profile-content">
                 <h1 className='name2'>MD. ZAHID HASAN</h1>
-                <h2 className='position'>Jr. Software Engineer</h2>
+                <h2 className='position'>Software Developer</h2>
+                {/* <h2 className='position'>Jr. Software Engineer</h2> */}
 
                 <span className='skills pl-1 flex items-center'>
                     <svg
@@ -286,7 +320,10 @@ const Profile = () => {
                     </svg>
                     <span className='another-sum p-5'>SUMMARY</span>
                 </span>
-                <p>Experienced and results-driven Software Engineer with a passion for crafting clean, efficient, and scalable code.  With 2 years of hands-on experience in software development, I have honed my skills in javaScript, python and java. I excel in designing robust architectures and implementing innovative solutions to complex technical challenges. My expertise spans the full software development lifecycle, from requirements gathering and architectural design to implementation, testing, and deployment. I thrive in collaborative environments, leveraging strong communication skills to work effectively with cross-functional teams. My commitment to continuous learning ensures that I stay abreast of the latest technologies and best practices in the industry. I am passionate about leveraging technology to solve real-world problems and am excited about the opportunity to contribute to innovative projects. Whether it is developing cutting-edge software applications or optimizing existing systems, I am committed to delivering solutions that exceed expectations and drive business success.</p>
+                <p>I am a passionate Software Developer with strong experience in MERN Stack, Odoo ERP, and AI-powered data solutions. I specialize in building scalable backend systems, custom ERP modules, intelligent automation, and interactive front-end applications.</p>
+                <p>I enjoy designing clean architectures, writing optimized code, and solving real business problems through technology. With skills in MongoDB, PostgreSQL, SQL, Python, Flask, REST APIs, and Odoo ORM, I am able to work across multiple layers of the modern software ecosystem.</p>
+                <p>I love learning, adapting, and improving—and I thrive in fast-paced engineering environments.</p>
+                {/* <p>Experienced and results-driven Software Engineer with a passion for crafting clean, efficient, and scalable code.  With 2 years of hands-on experience in software development, I have honed my skills in javaScript, python and java. I excel in designing robust architectures and implementing innovative solutions to complex technical challenges. My expertise spans the full software development lifecycle, from requirements gathering and architectural design to implementation, testing, and deployment. I thrive in collaborative environments, leveraging strong communication skills to work effectively with cross-functional teams. My commitment to continuous learning ensures that I stay abreast of the latest technologies and best practices in the industry. I am passionate about leveraging technology to solve real-world problems and am excited about the opportunity to contribute to innovative projects. Whether it is developing cutting-edge software applications or optimizing existing systems, I am committed to delivering solutions that exceed expectations and drive business success.</p> */}
 
                 <span className='skills pl-1 flex items-center'>
                     <svg
@@ -299,12 +336,13 @@ const Profile = () => {
                     </svg>
                     <span className='personality p-5'>PERSONALITY</span>
                 </span>
-                <li className='perso pl-5'>Analytical, Confident and Self-motivating.</li>
-                <li className='perso pl-5'>Dynamic and Creative in thinking.</li>
-                <li className='perso pl-5'>Welcome new challenges, especially if they involve implementing and  developing schemes.</li>
-                <li className='perso pl-5'>Hard worker, quick learner and ability to assume responsibility.</li>
-                <li className='perso pl-5'>Performing tasks at the right time as a team member under pressure.</li>
-
+                <ul>
+                    <li className='perso pl-5'>Strong analytical thinker, confident in solving complex technical challenges</li>
+                    <li className='perso pl-5'>Self-driven, disciplined, and committed to continuous improvement</li>
+                    <li className='perso pl-5'>Creative, curious, and always exploring new technologies</li>
+                    <li className='perso pl-5'>Works effectively under pressure and adapts quickly</li>
+                    <li className='perso pl-5'>Team-oriented mindset with clear communication and ownership</li>
+                </ul>
 
                 <span className='skills pl-1 flex items-center'>
                     <svg
@@ -318,14 +356,28 @@ const Profile = () => {
                     <span className='personality p-5'>WORK EXPERIENCE</span>
                 </span>
 
-                <li className='experience pl-5'>Develop and maintain end-to-end applications using the MERN stack, ensuring seamless integration between the frontend, backend, and database.</li>
-                <li className='experience pl-5'>Integrate AI functionalities into web applications using Flask, a Python web framework. This may involve incorporating machine learning models, natural language processing (NLP), or other AI algorithms to enhance application features.</li>
-                <li className='experience pl-5'>Design, implement, and optimize database schemas using MongoDB for NoSQL requirements and MySQL for relational data. Ensure efficient data storage, retrieval, and management.</li>
-                <li className='experience pl-5'>Create RESTful APIs using Express.js to facilitate communication between the frontend and backend. Define API endpoints and implement data retrieval, modification, and deletion operations.</li>
-                <li className='experience pl-5'> Deploy AI models developed with Flask, making them accessible through APIs. Ensure scalability and efficiency in serving AI predictions or processing requests.</li>
-                <li className='experience pl-5'>Use AI and data analysis techniques to process and analyze large datasets. Extract valuable insights and integrate them into the application`s functionality.</li>
-                <li className='experience pl-5'> Conduct thorough testing of the application, including unit testing and end-to-end testing. Debug and resolve issues to ensure a robust and error-free application.</li>
-                <li className='experience pl-5'>Use version control systems, such as Git, to manage and track changes to the codebase. Collaborate with team members using established version control workflows.</li>
+                <ul>
+                    <li className='experience pl-5'>Developed and customized Odoo modules across Purchase, Inventory, Sales, Accounting, Manufacturing, BOM, Expense, and Export LC workflows.</li>
+                    <li className='experience pl-5'>Implemented advanced backend logic using Odoo ORM, SQL queries, computed fields, constraints, onchange methods, server actions, and automation triggers.</li>
+                    <li className='experience pl-5'>Customized PDF & XLSX reports using QWeb, XML, Python, and report engines.</li>
+                    <li className='experience pl-5'>
+                        Designed custom Odoo modules such as:
+                        <ul className="nested-list">
+                            <li className='experience'>Create Restriction Module: controlled create and Edit access for many2one/many2many fields.</li>
+                            <li className='experience'>Dynamic One2many Tracker: automatic tracking and dynamic row generation.</li>
+                        </ul>
+                    </li>
+                    <li className='experience pl-5'>Automated multiple business operations including auto-generated invoices for Export LC, workflow updates, and scheduled cron jobs.</li>
+                    <li className='experience pl-5'>Created optimized domain filters and model relations to ensure accurate data retrieval (e.g., filtering PO but excluding RFQ).</li>
+                    <li className='experience pl-5'>Integrated and processed data through XML, CSV, JSON, REST APIs, and external systems.</li>
+                    <li className='experience pl-5'>Performed debugging, testing, and performance optimization for Odoo server processes.</li>
+                    <li className='experience pl-5'>Built full-stack features using React.js, Node.js, Express.js, MongoDB, delivering dynamic frontends and scalable backends.</li>
+                    <li className='experience pl-5'>Developed RESTful APIs for CRUD operations, authentication, business logic, and external service integrations.</li>
+                    <li className='experience pl-5'>Built data-driven dashboards and analytics modules using JavaScript, Python, Pandas, and AI integration.</li>
+                    <li className='experience pl-5'>Worked on a government-funded project under Ipsita Computers PTE Ltd involving sales-based price analysis using AI/ML, incorporating predictive analytics and data modeling.</li>
+                    <li className='experience pl-5'>Deployed AI models using Flask APIs, enabling real-time communication between frontend and AI engine.</li>
+                    <li className='experience pl-5'>Collaborated with cross-functional teams using Git/GitHub, following clean coding, branching, and version control.</li>
+                </ul>
             </div>
         </div>
     );

@@ -13,8 +13,8 @@ import "./Map.css";
 const markers = [
   {
     id: 1,
-    name: "DIT project,Badda",
-    position: { lat: 23.773663, lng: 90.428773 },
+    name: "Mirpur 12, Dhaka-1216, Bangladesh",
+    position: { lat: 23.834722, lng: 90.365833 },
   }
 ];
 
@@ -41,7 +41,7 @@ function Map() {
         <div className="area" style={{ height: isMobile ? '30vh' : '100vh', width: isMobile ? '96vw' : '37vw' }}>
           {isLoaded ? (
             <GoogleMap
-              center={{ lat: 23.773663, lng: 90.428773 }}
+              center={{ lat: 23.834722, lng: 90.365833 }}
               zoom={15}
               onClick={() => setActiveMarker(null)}
               mapContainerStyle={{ width: "100%", height: "100%" }}
@@ -59,7 +59,7 @@ function Map() {
                   {activeMarker === id ? (
                     <InfoWindowF onCloseClick={() => setActiveMarker(null)}>
                       <div>
-                        <p>{name}</p>
+                        <p style={{ fontWeight: "bold", fontSize: "18px", margin: 0 }}>{name}</p>
                       </div>
                     </InfoWindowF>
                   ) : null}

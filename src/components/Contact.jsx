@@ -73,7 +73,7 @@ function Contact() {
 
 
     return (
-        <div className='contact-container'>
+        <div className='contact-container_main'>
             <Navbar />
             <Sidebar />
             <BackGroundImage />
@@ -86,7 +86,7 @@ function Contact() {
                         sx={{
                             '& .MuiTextField-root': {
                                 m: 1,
-                                width: '40ch',
+                                // width: '40ch',
                                 '& input::placeholder': {
                                     color: 'white',
                                 },
@@ -111,7 +111,8 @@ function Contact() {
                                 </p>
                             </div>
 
-                            <div className="name flex flex-row mb-0 md:mb-4 pl-0 md:pl-5">
+                            {/* <div className="name flex flex-row mb-0 md:mb-4 pl-0 md:pl-5"> */}
+                            <div className="name flex flex-row mb-0 md:mb-4 pl-0 md:pl-5 gap-2">
                                 <TextField
                                     id="Name"
                                     label="Name"
@@ -120,6 +121,7 @@ function Contact() {
                                     placeholder="Full Name"
                                     required
                                     error={isNameError}
+                                    sx={{ width: '33.25ch' }}
                                     className="mr-2 w-1/2"
                                 />
                                 <TextField
@@ -131,6 +133,7 @@ function Contact() {
                                     required
                                     // error={!validateEmail(form.current?.from_email?.value)}
                                     error={isEmailError}
+                                    sx={{ width: '33.25ch' }}
                                     className="email w-1/2"
                                 />
                             </div>
