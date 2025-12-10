@@ -64,7 +64,7 @@ html {
   left: 50%; /* Position the title in the center horizontally */
   transform: translateX(-50%);
   /* transform: translate(-50%, -50%); */
-  visibility: hidden; /* Hide the title by default */
+  /* visibility: hidden; */
   background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
   color: white;
   padding: 5px 5px;
@@ -74,7 +74,7 @@ html {
 }
 
 .image-container:hover .image-title {
-  visibility: visible; /* Show the title on hover */
+  visibility: visible;
 }
 
 @media only screen and (max-width: 600px) {
