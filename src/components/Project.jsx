@@ -62,10 +62,10 @@ function Project() {
                                         {/* projectId */}
                                     <Link to={`/project/${item._id}`}>
                                         <div className="image-container">
-                                            {/* <img src={`https://zahid-portfolio-1.onrender.com/${item.imageUrl}`}
-                                                alt="" className="custom-image" /> */}
-                                            <img src={`http://localhost:5000/${item.imageUrl}`}
+                                            <img src={`https://zahid-portfolio-1.onrender.com/${item.imageUrl}`}
                                                 alt="" className="custom-image" />
+                                            {/* <img src={`http://localhost:5000/${item.imageUrl}`}
+                                                alt="" className="custom-image" /> */}
                                             <h1 className="image-title">Details of {item.title}</h1>
                                         </div>
                                     </Link>
