@@ -188,11 +188,11 @@ function UploadProject() {
         .then((res) => {
           console.log('✅ Success Response:', res);
           console.log('✅ Response Data:', res.data);
-          
           setUpdate(!update);
           setIsOpen(false);
           setContentData({ title: "", description: "", link: "", technology: "", note: "", backendLink: "", imageUrl: "" });
-          
+          // setContentData({ ...contentData, imageUrl: res.data.imageUrl });
+          // alert("Data Added Successfully");
           Swal.fire({
             position: 'top-center',
             icon: 'success',
@@ -203,52 +203,17 @@ function UploadProject() {
           })
         })
         .catch((err) => {
-          console.error('❌ Full Error Object:', err);
-          console.error('❌ Error Message:', err.message);
-          console.error('❌ Error Response:', err.response);
-          console.error('❌ Error Response Data:', err.response?.data);
-          console.error('❌ Error Status:', err.response?.status);
-          console.error('❌ Error Headers:', err.response?.headers);
-          console.error('❌ Request Config:', err.config);
-          
+          console.log(err);
+          // alert("Something went wrong!");
           Swal.fire({
             position: 'top-center',
             icon: 'error',
             title: 'Oops...',
-            text: err.response?.data?.message || err.message || 'Something went wrong!',
+            text: 'Something went wrong!',
             showConfirmButton: false,
             timer: 1500
           })
         })
-
-  //     http.post('save-project', formData)
-  //       .then(() => {
-  //         setUpdate(!update);
-  //         setIsOpen(false);
-  //         setContentData({ title: "", description: "", link: "", technology: "", note: "", backendLink: "", imageUrl: "" });
-  //         // setContentData({ ...contentData, imageUrl: res.data.imageUrl });
-  //         // alert("Data Added Successfully");
-  //         Swal.fire({
-  //           position: 'top-center',
-  //           icon: 'success',
-  //           title: 'Success !',
-  //           text: 'Data Added Successfully',
-  //           showConfirmButton: false,
-  //           timer: 1500
-  //         })
-  //       })
-  //       .catch((err) => {
-  //         console.log(err);
-  //         // alert("Something went wrong!");
-  //         Swal.fire({
-  //           position: 'top-center',
-  //           icon: 'error',
-  //           title: 'Oops...',
-  //           text: 'Something went wrong!',
-  //           showConfirmButton: false,
-  //           timer: 1500
-  //         })
-  //       })
     }
   }
 
