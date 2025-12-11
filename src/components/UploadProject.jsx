@@ -320,7 +320,14 @@ function UploadProject() {
 
                 <input onChange={handleChange} name='backendLink' value={contentData.backendLink} type="text" className="form-control form-control-sm my-2" placeholder="Backend Link" />
 
-                {/* <input onChange={handleChange} name='imageUrl' value={contentData.imageUrl} type="file" className="form-control form-control-sm my-2" required placeholder="ImageUrl" /> */}
+                {/*<input onChange={handleChange} name='imageUrl' value={contentData.imageUrl} type="file" className="form-control form-control-sm my-2" required placeholder="ImageUrl" />*/}
+                <input 
+                        onChange={handleImageUpload} 
+                        type="file" 
+                        className="form-control form-control-sm my-2" 
+                        accept="image/*" 
+                        required={!contentData._id} // Only required for new projects, not updates
+                      />
 
                 {/* <input onChange={handleImageUpload} type="file" className="form-control form-control-sm my-2" accept="image/*" required /> */}
 
